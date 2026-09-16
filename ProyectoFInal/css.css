@@ -1,0 +1,638 @@
+```css
+/* =========================================
+   AURORA
+   Diseño web del proyecto
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f0;
+    color: #26332d;
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #173d2b;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1200px;
+    min-height: 65px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 8px 20px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #edf5ef;
+
+    text-decoration: none;
+
+    padding: 10px 14px;
+
+    font-size: 14px;
+
+    border-radius: 20px;
+
+    transition: 0.25s;
+}
+
+nav a:hover {
+    background: #2d704d;
+}
+
+
+/* =========================================
+   PORTADA
+========================================= */
+
+.portada {
+    min-height: 88vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: #dfece4;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* círculos decorativos */
+
+.portada::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background: #c5dfce;
+
+    top: -150px;
+    left: -100px;
+}
+
+.portada::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background: #cbd9b9;
+
+    bottom: -130px;
+    right: -80px;
+}
+
+.portada img {
+    position: relative;
+    z-index: 2;
+
+    width: 230px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(23, 61, 43, 0.18);
+
+    margin-bottom: 25px;
+}
+
+.slogan {
+    position: relative;
+    z-index: 2;
+
+    font-size: 27px;
+
+    color: #28573e;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.boton {
+    position: relative;
+    z-index: 2;
+
+    background: #173d2b;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 25px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    transition: 0.25s;
+}
+
+.boton:hover {
+    background: #2d704d;
+
+    transform: scale(1.03);
+}
+
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+section:not(.portada) {
+    padding: 90px 25px;
+}
+
+
+/* títulos */
+
+section:not(.portada) h2 {
+    max-width: 950px;
+
+    margin: auto;
+
+    font-size: 34px;
+
+    color: #173d2b;
+
+    margin-bottom: 30px;
+}
+
+section:not(.portada) h2::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    background: #55a86f;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+
+/* textos */
+
+section:not(.portada) p {
+    max-width: 950px;
+
+    margin: 0 auto 20px auto;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #53625b;
+}
+
+
+/* =========================================
+   INICIO
+========================================= */
+
+#Inicio {
+    background: white;
+}
+
+#Inicio p {
+    background: #f1f7f3;
+
+    border-left: 5px solid #55a86f;
+
+    padding: 28px;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   PROBLEMA
+========================================= */
+
+#Problema {
+    background: #f8f4e9;
+}
+
+#Problema h2::before {
+    background: #e2b52d;
+}
+
+#Problema p {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================================
+   SOLUCIÓN
+========================================= */
+
+#Solucion {
+    background: #eaf4ee;
+}
+
+#Solucion h2::before {
+    background: #55a86f;
+}
+
+#Solucion p {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 10px;
+
+    border: 1px solid #d8e7dd;
+}
+
+
+/* =========================================
+   QUIÉNES SOMOS
+========================================= */
+
+#Quienes-Somos {
+    background: white;
+}
+
+#Quienes-Somos p {
+    max-width: 850px;
+}
+
+
+/* =========================================
+   AURORA
+========================================= */
+
+#AURORA {
+    background: #173d2b;
+
+    color: white;
+}
+
+#AURORA h2 {
+    color: white;
+}
+
+#AURORA h2::before {
+    background: #7ac58e;
+}
+
+#AURORA p {
+    color: #d8e5dc;
+
+    background: #214b36;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    max-width: 950px;
+}
+
+
+/* =========================================
+   DETALLE SEMÁFORO
+========================================= */
+
+#AURORA::after {
+    content: "";
+
+    display: block;
+
+    width: 130px;
+    height: 12px;
+
+    margin: 45px auto 0 auto;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        to right,
+        #d9534f 0%,
+        #d9534f 33%,
+        #e7bd32 33%,
+        #e7bd32 66%,
+        #55a86f 66%,
+        #55a86f 100%
+    );
+}
+
+
+/* =========================================
+   INSTRUCCIONES
+========================================= */
+
+#Instrucciones {
+    background: #eef3f0;
+}
+
+.contenido {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+.etiqueta {
+    display: block;
+
+    text-align: center;
+
+    color: #55a86f;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+#Instrucciones h2 {
+    text-align: center;
+}
+
+#Instrucciones h2::before {
+    display: none;
+}
+
+#Instrucciones .contenido > p {
+    text-align: center;
+
+    max-width: 750px;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   PASOS
+========================================= */
+
+.pasos {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.paso {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    gap: 18px;
+
+    border-bottom: 4px solid #55a86f;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.25s;
+}
+
+.paso:hover {
+    transform: translateY(-5px);
+}
+
+.paso > span {
+    min-width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #173d2b;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.paso h3 {
+    color: #244b35;
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+.paso p {
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    font-size: 14px !important;
+
+    line-height: 1.6 !important;
+
+    color: #66736c !important;
+}
+
+
+/* =========================================
+   INFORMACIÓN ACADÉMICA
+========================================= */
+
+#Informacion-Academica {
+    background: #dfeae3;
+
+    padding: 80px 25px;
+}
+
+#Informacion-Academica h2 {
+    text-align: center;
+
+    color: #173d2b;
+
+    margin-bottom: 35px;
+}
+
+#Informacion-Academica h2::before {
+    display: none;
+}
+
+.datos-academicos {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.dato {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #55a86f;
+}
+
+.dato strong {
+    display: block;
+
+    color: #28734d;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+
+    letter-spacing: 0.5px;
+}
+
+.dato span {
+    color: #4e5c55;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #102b1e;
+
+    color: #b7c7bd;
+
+    text-align: center;
+
+    padding: 22px;
+
+    font-size: 13px;
+}
+
+footer strong {
+    color: #75c28b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 750px) {
+
+    nav {
+        min-height: auto;
+
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+
+        padding: 7px 9px;
+    }
+
+    .portada {
+        min-height: 80vh;
+    }
+
+    .portada img {
+        width: 180px;
+    }
+
+    .slogan {
+        font-size: 21px;
+    }
+
+    section:not(.portada) {
+        padding: 60px 18px;
+    }
+
+    section:not(.portada) h2 {
+        font-size: 27px;
+    }
+
+    section:not(.portada) p {
+        font-size: 16px;
+    }
+
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-academicos {
+        grid-template-columns: 1fr;
+    }
+}
+```
